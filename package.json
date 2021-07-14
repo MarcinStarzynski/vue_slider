@@ -5,11 +5,21 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "proxy": "lcp --proxyUrl https://integrations.yaxint.com/"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "local-cors-proxy": "^1.1.0",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12",
+    "sass": "^1.35.2",
+    "sass-loader": "10.1.0",
+    "vue": "^3.0.0",
+    "vue-router": "^3.5.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

@@ -1,24 +1,19 @@
 # tabela-rating
 
-## Project setup
-```
-yarn install
-```
+## Project description
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+The repository contains a project based on Vue.js technology. 
+It presents an example slider that gets data from server and generates slides for every product.
+The project was prepared as a recruitment task.
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## How to start
 
-### Lints and fixes files
-```
-yarn lint
-```
+Project run on Node.js v14.16.0 and npm v6.14.11.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+After cloning a repository, install the required packages with the `yarn install` command.
+
+Next step is setting up a proxy server to recive data, to do it use `yarn proxy` command.
+
+Now you can use `yarn serve` to open the project in your browser. By deafult it runs on `http://localhost/8080`.
+
+All the source files needed for work can be found in the `src` folder.

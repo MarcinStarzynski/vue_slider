@@ -30,7 +30,7 @@ export default {
     },
 
     computed: {
-
+    
         description() {
             if(this.desc.length >= 30) {
                 let short = this.desc.slice(0, 30);
@@ -41,15 +41,21 @@ export default {
         },
 
         hoverImage() {
-            console.log(this.images);
             let length = this.images.length;
             
-            if(length >= 1 ){
-                let i = Math.floor(Math.random() * (length + 1));
-                return this.images[i];
-            } else {
-                return this.image;
-            }
+                let i = Math.floor(Math.random() * (length - 1));
+                if(this.images[i] === this.image && i != length && i > 1){
+                    i = i -1;
+                    console.log(length, i);
+                    return this.images[i]
+                } else if(this.images[i] === this.image && i == 0 && i !== length -1){
+                    i = i +1;
+                    console.log(length, i);
+                    return this.images[i];
+                }else {
+                    console.log(length, i);
+                    return this.images[i];
+                }
         }
     }
 }
